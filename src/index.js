@@ -19,22 +19,23 @@ render(
   // <Provider theme={darkTheme}>
   <Provider theme={lightTheme}>
     <Hello />
-    <div style={{ padding: 12, background: 'beige' }}>
+    <div style={{ padding: 12, background: 'snow' }}>
       <hr />
     </div>
-    <Readme />
-    <div style={{ padding: 12, background: 'beige' }}>
-      <hr />
-    </div>
-    <Button variant='cta'>This button in index.js</Button>
-    <div style={{ padding: 12, background: 'beige' }}>
+    <Button variant='cta'>This button in index.js // WORKS WELL</Button>
+    <div style={{ padding: 12, background: 'snow' }}>
       <hr />
     </div>
     <Accordion>
-      <Item key='files' title='This Accordion in index.js'>
+      <Item key='files' title='This Accordion in index.js  // WORKS WELL'>
         files
       </Item>
     </Accordion>
+    <div style={{ padding: 12, background: 'snow' }}>
+      <hr />
+    </div>
+    <h1>readme.md</h1>
+    <Readme />
   </Provider>,
   document.getElementById('root'),
 );
