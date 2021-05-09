@@ -1,28 +1,30 @@
 import {
   // Accordion,
+  // Item,
   Button,
-  Item,
   Provider,
   View,
   darkTheme,
   defaultTheme,
   lightTheme,
 } from '@adobe/react-spectrum';
+// import { Accordion, Item } from '@react-spectrum/accordion';
 import { Accordion } from '@react-spectrum/accordion';
+import { Item } from '@react-stately/collections';
 
 # hello.mdx
 
 ## usage
 
-This is an example using webpack
+This is an example using webpack & @mdx-js/loader
 
 <Button variant='cta'> This button in hello.mdx // WORKS WELL</Button>
 
 - if Accordion is commented, rendering works.
 - if Accordion is not commented, build fails.
 
-{/* <Accordion>
+<Accordion>
   <Item key='files' title='This Accordion in hello.mdx'>
-    files
+    files contents
   </Item>
-</Accordion> */}
+</Accordion>
